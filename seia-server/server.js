@@ -1,10 +1,9 @@
 const http = require("http");
 const fs = require("fs");
-const host = 'localhost';
-const port = 9000;
+const port = process.env.PORT || 9000;
 
 const requestListener = function (req, res) {
-    res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
+    res.setHeader('Access-Control-Allow-Origin', "*");
     res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
     res.setHeader('Access-Control-Allow-Headers', '*');
 
@@ -34,6 +33,6 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+server.listen(port, () => {
+    console.log(`Server is listening on ${port}`);
 });

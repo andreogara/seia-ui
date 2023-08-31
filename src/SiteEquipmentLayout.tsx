@@ -1,7 +1,4 @@
 import { BatteryConfigMap, TransformerConfig, batteryConfigurationMap, EquipmentColorCoding } from "./constants";
-import megapack from "./assets/megapack.jpg";
-import transformer from "./assets/transformer.jpg";
-import powerpack from "./assets/powerpack.jpg";
 export const SiteEquipmentLayout = ({configState, hide}:{configState: {[key:string]: number}, hide: () => void} ) => {
     const itemDetailsList:BatteryConfigMap[] = [];
     let totalLandArea = 0;
