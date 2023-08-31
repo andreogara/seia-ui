@@ -1,7 +1,13 @@
-# Getting Started with Create React App
+# Getting Started with SEIA UI App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Using this app, the user is able to
+1. Enter the number of each type of device they want
+2. The number of required transformers will be updated depending on number of batteries selected at a 1:2 ratio
+3. The UI will show an auto generated UI of a mock site layout. (This feature needs more work, and given more time, will be completed. It also wasn't exactly clear from instructions how to enforce a max width of 100ft in the layouts). 
+4. Saving sessions is also possible by clicking on the save button. The server was written using nodejs and httpserver, hosted on heroku. It serves saved data both for the hosted app and the locally served app.
+5. This project was developed using typescript.
+6. Tests using the react-testing-library framework is also enabled. Refer to line 22 for more details.
 ## Available Scripts
 
 In the project directory, you can run:
@@ -9,10 +15,9 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The app will make requests to a server hosted on heroku which is a simple httpserver to allow saving of progress.
 
 ### `npm test`
 

@@ -46,7 +46,7 @@ function App() {
   const saveConfig = (e: React.SyntheticEvent<HTMLButtonElement>) => {
     e.preventDefault();
     saveConfigData(configState)
-      .then(() => alert("suucessfully saved!"))
+      .then(() => alert("sucessfully saved!"))
       .catch(err => console.log(err));
   }
 
@@ -115,7 +115,7 @@ function App() {
         <fieldset disabled={shouldShowSiteLayout}>
           <legend>Choose your battery configuration</legend>
           {getBatteryConfigTemplate(batteryConfigurationMap)}
-          <button type='button' onClick={() => setConfigState({})}>Reset fields</button>
+          <button className="reset-estimates-button" type='button' onClick={() => setConfigState({})}>Reset fields</button>
         </fieldset>
 
         <table id="config-summary" className='summary-items'>
