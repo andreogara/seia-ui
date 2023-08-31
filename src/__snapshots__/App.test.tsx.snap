@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clears the estimate button when reset button is clicked 1`] = `
+<table
+  class="summary-items"
+  id="config-summary"
+>
+  <caption>
+    Site Equipment Estimates
+  </caption>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Count
+      </th>
+      <th>
+        Cost
+      </th>
+      <th>
+        Capacity
+      </th>
+      <th>
+        Square Footage
+      </th>
+    </tr>
+  </thead>
+  <tbody />
+  <tfoot>
+    <tr>
+      <td>
+        Total
+      </td>
+      <td>
+        0
+      </td>
+      <td>
+        $0.00
+      </td>
+      <td>
+        0MWh
+      </td>
+      <td>
+        0FT
+      </td>
+    </tr>
+  </tfoot>
+</table>
+`;
+
+exports[`renders the battery selectors correctly 1`] = `
+<fieldset>
+  <legend>
+    Choose your battery configuration
+  </legend>
+  <p>
+    <label
+      for="megapackxl"
+    >
+      MEGAPACKXL
+    </label>
+    <input
+      id="megapackxl"
+      min="0"
+      name="megapackxl"
+      type="number"
+      value="0"
+    />
+  </p>
+  <p>
+    <label
+      for="megapack2"
+    >
+      MEGAPACK2
+    </label>
+    <input
+      id="megapack2"
+      min="0"
+      name="megapack2"
+      type="number"
+      value="0"
+    />
+  </p>
+  <p>
+    <label
+      for=" megapack"
+    >
+       MEGAPACK
+    </label>
+    <input
+      id=" megapack"
+      min="0"
+      name=" megapack"
+      type="number"
+      value="0"
+    />
+  </p>
+  <p>
+    <label
+      for="powerpack"
+    >
+      POWERPACK
+    </label>
+    <input
+      id="powerpack"
+      min="0"
+      name="powerpack"
+      type="number"
+      value="0"
+    />
+  </p>
+  <button
+    type="button"
+  >
+    Reset fields
+  </button>
+</fieldset>
+`;
+
+exports[`updates table of estimates correctly when one selects a battery amount 1`] = `
+Array [
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Count
+    </th>
+    <th>
+      Cost
+    </th>
+    <th>
+      Capacity
+    </th>
+    <th>
+      Square Footage
+    </th>
+  </tr>,
+  <tr>
+    <td>
+      megapackxl
+    </td>
+    <td>
+      5
+    </td>
+    <td>
+      $600,000.00
+    </td>
+    <td>
+      20MWh
+    </td>
+    <td>
+      2000FT
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      transformer
+    </td>
+    <td>
+      0
+    </td>
+    <td>
+      $0.00
+    </td>
+    <td>
+      0MWh
+    </td>
+    <td>
+      0FT
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Total
+    </td>
+    <td>
+      5
+    </td>
+    <td>
+      $600,000.00
+    </td>
+    <td>
+      20MWh
+    </td>
+    <td>
+      2000FT
+    </td>
+  </tr>,
+]
+`;
+
+exports[`updates table of estimates correctly when one selects a battery amount 2`] = `
+Array [
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Count
+    </th>
+    <th>
+      Cost
+    </th>
+    <th>
+      Capacity
+    </th>
+    <th>
+      Square Footage
+    </th>
+  </tr>,
+  <tr>
+    <td>
+      megapackxl
+    </td>
+    <td>
+      5
+    </td>
+    <td>
+      $600,000.00
+    </td>
+    <td>
+      20MWh
+    </td>
+    <td>
+      2000FT
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      transformer
+    </td>
+    <td>
+      0
+    </td>
+    <td>
+      $0.00
+    </td>
+    <td>
+      0MWh
+    </td>
+    <td>
+      0FT
+    </td>
+  </tr>,
+  <tr>
+    <td>
+      Total
+    </td>
+    <td>
+      5
+    </td>
+    <td>
+      $600,000.00
+    </td>
+    <td>
+      20MWh
+    </td>
+    <td>
+      2000FT
+    </td>
+  </tr>,
+]
+`;

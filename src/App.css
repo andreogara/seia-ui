@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #282c34;
 }
 
 .App-logo {
@@ -13,17 +18,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +29,114 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+fieldset {
+  padding: 30px;
+  border: 3px solid rgb(104, 102, 102);
+  text-align: -webkit-right;
+  font-size: 2ch;
+}
+
+legend {
+  font-size: 2ch;
+  font-family: serif;
+}
+
+form {
+  padding-top: 10px;
+  width: 60%;
+  font-size: 1.2ch;
+  background: white;
+  height: 80%;
+  border: 2px solid #282c34;
+}
+
+fieldset label {
+  margin-right: 5px;
+  font-family: serif;
+}
+
+.summary-items {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 700px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: 50px;
+}
+
+.summary-items thead tr {
+  background-color: #282c34;
+  color: #ffffff;
+  text-align: left;
+}
+.summary-items caption {
+  font-family: serif;
+  font-size: 3ch;
+}
+
+.summary-items th,
+.summary-items td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.summary-items tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.summary-items tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.summary-items tbody tr:last-of-type {
+  border-bottom: 2px solid #282c34;
+}
+
+.generate-map-button, .save-config-button {
+  align-items: center;
+  background: #FFFFFF;
+  border: 0 solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  color: #1A202C;
+  display: inline-flex;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 56px;
+  justify-content: center;
+  line-height: 24px;
+  padding: 24px;
+  text-decoration: none;
+  width: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.site-equipment-layout {
+  border: 2px solid rgb(24, 23, 23);
+  position: fixed;
+  background-color: #e7e7e7;
+  left: 40%;
+  top: 20%;
+  overflow: auto;
+}
+
+.site-equipment-layout > button {
+  float: right;
+  background-color: transparent;
+  font-size: 8px;
+  border: none;
+}
+
+.site-equipment {
+  clear: both;
+  display: inline-block;
+  margin: 7px 10px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
 }
